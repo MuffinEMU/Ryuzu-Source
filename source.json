@@ -7,6 +7,15 @@
   "website": "https://muffinemu.github.io/Ryuzu-Source",
   "news": [
     {
+      "title": "Build 129",
+      "identifier": "build-129",
+      "caption": "# Ryuzu build 129",
+      "date": "2026-10-14T04:20:43Z",
+      "tintColor": "#E0703F",
+      "appID": "com.muffinemu.ryuzu",
+      "notify": false
+    },
+    {
       "title": "Build 128",
       "identifier": "build-128",
       "caption": "# Ryuzu build 128",
@@ -54,6 +63,16 @@
       },
       "versions": [
         {
+          "localizedDescription": "# Ryuzu build 129\n\nSwitch emulation for iPhone and iPad. Built from main at `020cfed`.\n\nInstall the sideload IPA, or add this source in SideStore or AltStore and it updates itself:\n`https://muffinemu.github.io/Ryuzu/source.json`\n\n**Changes since ryuzu-128-936aa14**\n- Launch intro: Switch-style click with the Ryuzu logo, played over the root view at cold start\n\nBuilt from 020cfed3a31a6d0185556d1c3a76b1cb561c443a.",
+          "sha256": "334e1615b88d9d7f8d40789b3f7818e2c9881c548bcf8ca878b11ee8e8baf046",
+          "version": "0.1.0.129",
+          "buildVersion": "129",
+          "date": "2026-10-14T04:20:43Z",
+          "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/ryuzu-129-020cfed/Ryuzu-129-sideload.ipa",
+          "size": 14390107,
+          "minOSVersion": "15.0"
+        },
+        {
           "localizedDescription": "# Ryuzu build 128\n\nSwitch emulation for iPhone and iPad. Built from main at `936aa14`.\n\nInstall the sideload IPA, or add this source in SideStore or AltStore and it updates itself:\n`https://muffinemu.github.io/Ryuzu/source.json`\n\n**Changes since ryuzu-124-9138a25**\n- Second launch: take address space from the launch-time placeholder when no hole is left; a throwing renderer init fails the launch instead of ending the app\n- Add performance overlay and per-game performance presets; drop Your apps row\n- Switch Home button in the library header opens the Switch section as a sheet\n- Logo beside the Ryuzu title; Switch section also shows with an empty library\n- Smoke test launches com.muffinemu.ryuzu\n- Source: tint colours carry the leading # like MuffinEMU's working sources\n\nBuilt from 936aa14c522f6de13e329bc8636cc4249c74f70a.",
           "sha256": "190b4726b3d769ea86b1391c4b59e0a6e2820438518e06a21489de5274cdb261",
           "version": "0.1.0.128",
@@ -84,10 +103,10 @@
           "minOSVersion": "15.0"
         }
       ],
-      "version": "0.1.0.128",
-      "versionDate": "2026-10-14T02:59:23Z",
-      "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/ryuzu-128-936aa14/Ryuzu-128-sideload.ipa",
-      "size": 14348888,
+      "version": "0.1.0.129",
+      "versionDate": "2026-10-14T04:20:43Z",
+      "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/ryuzu-129-020cfed/Ryuzu-129-sideload.ipa",
+      "size": 14390107,
       "minOSVersion": "15.0"
     }
   ],
