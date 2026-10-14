@@ -2,9 +2,61 @@
   "name": "Ryuzu",
   "identifier": "com.muffinemu.ryuzu-source",
   "subtitle": "Switch emulator for iOS",
-  "description": "Automatic builds of Muffin-NX, an iOS port of the Eden Switch emulator.",
+  "description": "Automatic builds of Ryuzu, an iOS port of the Eden Switch emulator.",
   "sourceURL": "https://muffinemu.github.io/Ryuzu-Source/source.json",
-  "website": "https://github.com/MuffinEMU/Ryuzu-Source",
-  "news": [],
-  "apps": []
+  "website": "https://muffinemu.github.io/Ryuzu-Source",
+  "news": [
+    {
+      "title": "Build 123",
+      "identifier": "build-123",
+      "caption": "Automatic build 123 of main at `1f753c0`.",
+      "date": "2026-10-14T01:54:31Z",
+      "tintColor": "E0703F",
+      "appID": "com.muffinemu.ryuzu",
+      "notify": false
+    }
+  ],
+  "apps": [
+    {
+      "bundleIdentifier": "com.muffinemu.ryuzu",
+      "name": "Ryuzu",
+      "developerName": "Void",
+      "subtitle": "Switch emulator for iOS",
+      "localizedDescription": "Ryuzu is a Nintendo Switch emulator for iPhone and iPad, built on the Eden core.\n\n\u2022 Touch controls with the Zone layout, plus hardware controller support\n\u2022 Load games and keys from files or whole folders, in place\n\u2022 Shader cache progress with a skip button, and save import and export\n\u2022 Detailed logs you can send straight from the app\n\nYou need your own keys, firmware and games. A JIT enabler such as StikDebug is required.",
+      "iconURL": "https://raw.githubusercontent.com/MuffinEMU/Ryuzu-Source/main/icon.png",
+      "tintColor": "E0703F",
+      "category": "games",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "Ryuzu can use Bluetooth game controllers.",
+          "NSMicrophoneUsageDescription": "Some games use the microphone. It is only used while a game that asks for it is running.",
+          "NSMotionUsageDescription": "Ryuzu uses motion data for games that read the console gyroscope."
+        }
+      },
+      "versions": [
+        {
+          "localizedDescription": "Automatic build 123 of main at `1f753c0`.\n\nInstall the sideload IPA, or add this source in SideStore or AltStore and it updates itself:\n`https://muffinemu.github.io/Ryuzu/source.json`\n\n**Changes since nx-116-5c6a862**\n- Ryuzu look: icon-matched theme as default (dark navy, teal-violet wash, orange accent), split mark on the loading screen, app forced dark under it\n- Permission strings say Ryuzu\n- Add a Switch section to the library\n- Source generator: icon, tint, news, per-build changelog, sha256, permissions, featured app\n- Bundle id is com.muffinemu.ryuzu\n- Silence the per-draw unused render target assert; log the settings in effect at launch\n- Log per-thread CPU use in the perf line; make Fermi2D blit logging trace-level\n- Rename everything to Ryuzu: bundle id, product, scheme, project, entitlements, artifacts, repos\n- Rebrand to Ryuzu: name, app icon, release and source names\n\nBuilt from 1f753c028af4fe376e16c4a93c23236cd8d557a0.",
+          "sha256": "bb2a3e9ea3008151468e7218e9bbc6e54c311a9d5d22fd03becc3a91d6ec1cf1",
+          "version": "0.1.0.123",
+          "buildVersion": "123",
+          "date": "2026-10-14T01:54:31Z",
+          "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/nx-123-1f753c0/Ryuzu-123-sideload.ipa",
+          "size": 14326109,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "version": "0.1.0.123",
+      "versionDate": "2026-10-14T01:54:31Z",
+      "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/nx-123-1f753c0/Ryuzu-123-sideload.ipa",
+      "size": 14326109,
+      "minOSVersion": "15.0"
+    }
+  ],
+  "iconURL": "https://raw.githubusercontent.com/MuffinEMU/Ryuzu-Source/main/icon.png",
+  "headerURL": "https://raw.githubusercontent.com/MuffinEMU/Ryuzu-Source/main/header.png",
+  "tintColor": "E0703F",
+  "featuredApps": [
+    "com.muffinemu.ryuzu"
+  ]
 }
