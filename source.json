@@ -11,7 +11,7 @@
       "identifier": "build-123",
       "caption": "Automatic build 123 of main at `1f753c0`.",
       "date": "2026-10-14T01:54:31Z",
-      "tintColor": "E0703F",
+      "tintColor": "#E0703F",
       "appID": "com.muffinemu.ryuzu",
       "notify": false
     }
@@ -24,7 +24,7 @@
       "subtitle": "Switch emulator for iOS",
       "localizedDescription": "Ryuzu is a Nintendo Switch emulator for iPhone and iPad, built on the Eden core.\n\n\u2022 Touch controls with the Zone layout, plus hardware controller support\n\u2022 Load games and keys from files or whole folders, in place\n\u2022 Shader cache progress with a skip button, and save import and export\n\u2022 Detailed logs you can send straight from the app\n\nYou need your own keys, firmware and games. A JIT enabler such as StikDebug is required.",
       "iconURL": "https://raw.githubusercontent.com/MuffinEMU/Ryuzu-Source/main/icon.png",
-      "tintColor": "E0703F",
+      "tintColor": "#E0703F",
       "category": "games",
       "appPermissions": {
         "entitlements": [],
@@ -55,7 +55,7 @@
   ],
   "iconURL": "https://raw.githubusercontent.com/MuffinEMU/Ryuzu-Source/main/icon.png",
   "headerURL": "https://raw.githubusercontent.com/MuffinEMU/Ryuzu-Source/main/header.png",
-  "tintColor": "E0703F",
+  "tintColor": "#E0703F",
   "featuredApps": [
     "com.muffinemu.ryuzu"
   ]
