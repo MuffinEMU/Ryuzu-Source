@@ -7,6 +7,15 @@
   "website": "https://muffinemu.github.io/Ryuzu-Source",
   "news": [
     {
+      "title": "Build 128",
+      "identifier": "build-128",
+      "caption": "# Ryuzu build 128",
+      "date": "2026-10-14T02:59:23Z",
+      "tintColor": "#E0703F",
+      "appID": "com.muffinemu.ryuzu",
+      "notify": false
+    },
+    {
       "title": "Build 124",
       "identifier": "build-124",
       "caption": "# Ryuzu build 124",
@@ -45,6 +54,16 @@
       },
       "versions": [
         {
+          "localizedDescription": "# Ryuzu build 128\n\nSwitch emulation for iPhone and iPad. Built from main at `936aa14`.\n\nInstall the sideload IPA, or add this source in SideStore or AltStore and it updates itself:\n`https://muffinemu.github.io/Ryuzu/source.json`\n\n**Changes since ryuzu-124-9138a25**\n- Second launch: take address space from the launch-time placeholder when no hole is left; a throwing renderer init fails the launch instead of ending the app\n- Add performance overlay and per-game performance presets; drop Your apps row\n- Switch Home button in the library header opens the Switch section as a sheet\n- Logo beside the Ryuzu title; Switch section also shows with an empty library\n- Smoke test launches com.muffinemu.ryuzu\n- Source: tint colours carry the leading # like MuffinEMU's working sources\n\nBuilt from 936aa14c522f6de13e329bc8636cc4249c74f70a.",
+          "sha256": "190b4726b3d769ea86b1391c4b59e0a6e2820438518e06a21489de5274cdb261",
+          "version": "0.1.0.128",
+          "buildVersion": "128",
+          "date": "2026-10-14T02:59:23Z",
+          "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/ryuzu-128-936aa14/Ryuzu-128-sideload.ipa",
+          "size": 14348888,
+          "minOSVersion": "15.0"
+        },
+        {
           "localizedDescription": "# Ryuzu build 124\n\nSwitch emulation for iPhone and iPad. Built from main at `9138a25`.\n\nInstall the sideload IPA, or add this source in SideStore or AltStore and it updates itself:\n`https://muffinemu.github.io/Ryuzu/source.json`\n\n**Changes since nx-123-1f753c0**\n- Log a memory breakdown (guest RAM, JIT code, biggest tags) under memory pressure\n- GPU submit failure ends the game with a message instead of terminating the app; memory pressure frees cached textures\n- Official release naming (ryuzu-N tags, non-prerelease), accurate README\n- Defer guest RAM unmap until the system is fully destroyed; log address space at startup stages\n\nBuilt from 9138a255ece499418e8604038691fe5a9779f04f.",
           "sha256": "fe1ff78d07ae4f44f00e8bee98c16fd994b7360319f6051d229be34f85330b65",
           "version": "0.1.0.124",
@@ -65,10 +84,10 @@
           "minOSVersion": "15.0"
         }
       ],
-      "version": "0.1.0.124",
-      "versionDate": "2026-10-14T02:10:47Z",
-      "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/ryuzu-124-9138a25/Ryuzu-124-sideload.ipa",
-      "size": 14330350,
+      "version": "0.1.0.128",
+      "versionDate": "2026-10-14T02:59:23Z",
+      "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/ryuzu-128-936aa14/Ryuzu-128-sideload.ipa",
+      "size": 14348888,
       "minOSVersion": "15.0"
     }
   ],
