@@ -1,9 +1,13 @@
-# Ryuzu source
+# Ryuzu
 
-A SideStore and AltStore source for Ryuzu, an iOS port of the Eden Switch emulator.
+Switch emulation for iPhone and iPad, built on the Eden core. This repository hosts the SideStore / AltStore source and the release IPAs.
 
-Add this address as a source in SideStore or AltStore:
+**Source URL:** `https://muffinemu.github.io/Ryuzu-Source/source.json`
 
-    https://muffinemu.github.io/Ryuzu-Source/source.json
+Open https://muffinemu.github.io/Ryuzu-Source/ on your device to add it with one tap.
 
-Each build's IPA is attached to a release in this repository. This repository holds only the source file and the IPAs; the code is not published here.
+## What you need
+- iOS 17 or later with JIT enabled (StikDebug or similar)
+- Your own keys, firmware and games
+
+New builds are published here automatically. Each build in the source has its sha256, entitlements and privacy descriptions listed.

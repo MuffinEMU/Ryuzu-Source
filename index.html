@@ -1,1 +1,50 @@
-<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ryuzu source</title><p>Add <code>source.json</code> from this site to SideStore or AltStore.</p>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ryuzu</title><link rel="icon" href="icon.png">
+<meta name="description" content="Ryuzu: Switch emulation for iPhone and iPad. Add the source to SideStore or AltStore.">
+<style>
+:root{--bg:#0b0c11;--card:#151823;--text:#f4f1ea;--dim:#9aa3b2;--accent:#e0703f;--line:#262a38}
+@media (prefers-color-scheme:light){:root{--bg:#f6f4ef;--card:#fff;--text:#16181f;--dim:#5b6372;--line:#e3e0d8}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+main{max-width:720px;margin:0 auto;padding:0 16px 64px}
+header{display:flex;gap:16px;align-items:center;padding:40px 0 8px}
+header img{width:84px;height:84px;border-radius:19px}
+h1{margin:0;font-size:34px}header p{margin:2px 0 0;color:var(--dim)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin:16px 0}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+a.b,button{appearance:none;border:0;border-radius:11px;padding:11px 16px;font:inherit;font-weight:600;cursor:pointer;text-decoration:none;color:#fff;background:var(--accent)}
+a.b.alt,button.alt{background:transparent;color:var(--text);border:1px solid var(--line)}
+code{background:rgba(127,127,127,.15);padding:2px 6px;border-radius:6px;word-break:break-all}
+h2{font-size:19px;margin:0 0 8px}ul{padding-left:20px;margin:6px 0}li{margin:4px 0}
+.row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid var(--line)}.row:first-child{border-top:0}
+.dim{color:var(--dim)}small{color:var(--dim)}
+</style></head><body><main>
+<header><img src="icon.png" alt=""><div><h1>Ryuzu</h1><p>Switch emulation for iPhone and iPad</p></div></header>
+
+<div class="card"><h2>Add the source</h2>
+<code id="url">https://muffinemu.github.io/Ryuzu-Source/source.json</code>
+<div class="btns">
+<a class="b" id="ss" href="sidestore://source?url=https://muffinemu.github.io/Ryuzu-Source/source.json">Add to SideStore</a>
+<a class="b alt" href="altstore://source?url=https://muffinemu.github.io/Ryuzu-Source/source.json">Add to AltStore</a>
+<button class="alt" id="copy">Copy URL</button></div></div>
+
+<div class="card"><h2>Latest builds</h2><div id="builds" class="dim">Loading…</div></div>
+
+<div class="card"><h2>What you need</h2><ul>
+<li>An iPhone or iPad on iOS 17 or later, with JIT enabled (StikDebug or similar)</li>
+<li>Your own <code>prod.keys</code>, firmware and games</li>
+<li>Free storage: shader caches and saves grow over time</li></ul></div>
+
+<p><small>Ryuzu is built on the open-source Eden core. Source code: <a href="https://github.com/MuffinEMU/Ryuzu-Source">MuffinEMU/Ryuzu-Source</a>. Made by Void.</small></p>
+<script>
+document.getElementById('copy').onclick=function(){var b=this,u=document.getElementById('url').textContent;
+(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){b.textContent='Copied'},function(){b.textContent='Select and copy the URL above'})};
+fetch('source.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(s){
+var el=document.getElementById('builds'),app=(s.apps||[])[0];
+if(!app||!(app.versions||[]).length){el.textContent='No build published yet. The first one appears here when it finishes compiling.';return}
+el.className='';el.innerHTML='';
+app.versions.slice(0,8).forEach(function(v){var d=document.createElement('div');d.className='row';
+var mb=v.size?(v.size/1048576).toFixed(0)+' MB':'';var day=(v.date||'').slice(0,10);
+d.innerHTML='<span><b>Build '+v.buildVersion+'</b> <span class="dim">'+v.version+'</span></span><span class="dim">'+day+' '+mb+'</span>';el.appendChild(d)})
+}).catch(function(){document.getElementById('builds').textContent='Could not load the source.'});
+</script></main></body></html>
