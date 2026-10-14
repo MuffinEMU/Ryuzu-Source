@@ -7,6 +7,15 @@
   "website": "https://muffinemu.github.io/Ryuzu-Source",
   "news": [
     {
+      "title": "Build 124",
+      "identifier": "build-124",
+      "caption": "# Ryuzu build 124",
+      "date": "2026-10-14T02:10:47Z",
+      "tintColor": "#E0703F",
+      "appID": "com.muffinemu.ryuzu",
+      "notify": false
+    },
+    {
       "title": "Build 123",
       "identifier": "build-123",
       "caption": "Automatic build 123 of main at `1f753c0`.",
@@ -36,6 +45,16 @@
       },
       "versions": [
         {
+          "localizedDescription": "# Ryuzu build 124\n\nSwitch emulation for iPhone and iPad. Built from main at `9138a25`.\n\nInstall the sideload IPA, or add this source in SideStore or AltStore and it updates itself:\n`https://muffinemu.github.io/Ryuzu/source.json`\n\n**Changes since nx-123-1f753c0**\n- Log a memory breakdown (guest RAM, JIT code, biggest tags) under memory pressure\n- GPU submit failure ends the game with a message instead of terminating the app; memory pressure frees cached textures\n- Official release naming (ryuzu-N tags, non-prerelease), accurate README\n- Defer guest RAM unmap until the system is fully destroyed; log address space at startup stages\n\nBuilt from 9138a255ece499418e8604038691fe5a9779f04f.",
+          "sha256": "fe1ff78d07ae4f44f00e8bee98c16fd994b7360319f6051d229be34f85330b65",
+          "version": "0.1.0.124",
+          "buildVersion": "124",
+          "date": "2026-10-14T02:10:47Z",
+          "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/ryuzu-124-9138a25/Ryuzu-124-sideload.ipa",
+          "size": 14330350,
+          "minOSVersion": "15.0"
+        },
+        {
           "localizedDescription": "Automatic build 123 of main at `1f753c0`.\n\nInstall the sideload IPA, or add this source in SideStore or AltStore and it updates itself:\n`https://muffinemu.github.io/Ryuzu/source.json`\n\n**Changes since nx-116-5c6a862**\n- Ryuzu look: icon-matched theme as default (dark navy, teal-violet wash, orange accent), split mark on the loading screen, app forced dark under it\n- Permission strings say Ryuzu\n- Add a Switch section to the library\n- Source generator: icon, tint, news, per-build changelog, sha256, permissions, featured app\n- Bundle id is com.muffinemu.ryuzu\n- Silence the per-draw unused render target assert; log the settings in effect at launch\n- Log per-thread CPU use in the perf line; make Fermi2D blit logging trace-level\n- Rename everything to Ryuzu: bundle id, product, scheme, project, entitlements, artifacts, repos\n- Rebrand to Ryuzu: name, app icon, release and source names\n\nBuilt from 1f753c028af4fe376e16c4a93c23236cd8d557a0.",
           "sha256": "bb2a3e9ea3008151468e7218e9bbc6e54c311a9d5d22fd03becc3a91d6ec1cf1",
           "version": "0.1.0.123",
@@ -46,10 +65,10 @@
           "minOSVersion": "15.0"
         }
       ],
-      "version": "0.1.0.123",
-      "versionDate": "2026-10-14T01:54:31Z",
-      "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/nx-123-1f753c0/Ryuzu-123-sideload.ipa",
-      "size": 14326109,
+      "version": "0.1.0.124",
+      "versionDate": "2026-10-14T02:10:47Z",
+      "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/ryuzu-124-9138a25/Ryuzu-124-sideload.ipa",
+      "size": 14330350,
       "minOSVersion": "15.0"
     }
   ],
