@@ -1,49 +1,10 @@
 {
-  "name": "Muffin-NX",
-  "identifier": "com.muffinemu.muffin-nx-source",
+  "name": "Ryuzu",
+  "identifier": "com.muffinemu.ryuzu-source",
   "subtitle": "Switch emulator for iOS",
   "description": "Automatic builds of Muffin-NX, an iOS port of the Eden Switch emulator.",
-  "sourceURL": "https://muffinemu.github.io/Muffin-NX-Source/source.json",
-  "website": "https://github.com/MuffinEMU/Muffin-NX-Source",
+  "sourceURL": "https://muffinemu.github.io/Ryuzu-Source/source.json",
+  "website": "https://github.com/MuffinEMU/Ryuzu-Source",
   "news": [],
-  "apps": [
-    {
-      "bundleIdentifier": "dev.edenios.Eden",
-      "name": "Muffin-NX",
-      "developerName": "Void",
-      "subtitle": "Switch emulator for iOS",
-      "localizedDescription": "Muffin-NX is an iOS port of the Eden Switch emulator. Updates arrive automatically with every build.",
-      "versions": [
-        {
-          "version": "0.1.0.116",
-          "buildVersion": "116",
-          "date": "2026-10-13T18:52:01Z",
-          "downloadURL": "https://github.com/MuffinEMU/Muffin-NX-Source/releases/download/nx-116-5c6a862/Muffin-NX-116-sideload.ipa",
-          "size": 14266697,
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "0.1.0.115",
-          "buildVersion": "115",
-          "date": "2026-10-13T18:38:11Z",
-          "downloadURL": "https://github.com/MuffinEMU/Muffin-NX-Source/releases/download/nx-115-11fb120/Muffin-NX-115-sideload.ipa",
-          "size": 14259705,
-          "minOSVersion": "15.0"
-        },
-        {
-          "version": "0.1.0.92",
-          "buildVersion": "92",
-          "date": "2026-10-13T18:38:11Z",
-          "downloadURL": "https://github.com/MuffinEMU/Muffin-NX-Source/releases/download/nx-92-7af2024/Muffin-NX-92-sideload.ipa",
-          "size": 14196742,
-          "minOSVersion": "15.0"
-        }
-      ],
-      "version": "0.1.0.116",
-      "versionDate": "2026-10-13T18:52:01Z",
-      "downloadURL": "https://github.com/MuffinEMU/Muffin-NX-Source/releases/download/nx-116-5c6a862/Muffin-NX-116-sideload.ipa",
-      "size": 14266697,
-      "minOSVersion": "15.0"
-    }
-  ]
+  "apps": []
 }
