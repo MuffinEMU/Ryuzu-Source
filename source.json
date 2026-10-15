@@ -7,6 +7,15 @@
   "website": "https://muffinemu.github.io/Ryuzu-Source",
   "news": [
     {
+      "title": "Build 135",
+      "identifier": "build-135",
+      "caption": "# Ryuzu build 135",
+      "date": "2026-10-15T00:32:44Z",
+      "tintColor": "#E0703F",
+      "appID": "com.muffinemu.ryuzu",
+      "notify": false
+    },
+    {
       "title": "Build 134",
       "identifier": "build-134",
       "caption": "# Ryuzu build 134",
@@ -90,6 +99,16 @@
       },
       "versions": [
         {
+          "localizedDescription": "# Ryuzu build 135\n\nSwitch emulation for iPhone and iPad. Built from main at `d66afc9`.\n\nInstall the sideload IPA, or add this source in SideStore or AltStore and it updates itself:\n`https://muffinemu.github.io/Ryuzu/source.json`\n\n**Changes since ryuzu-134-44f1d6a**\n- Two pipeline builder threads on iOS: Mario Kart 8 ran out of memory building 160 pipelines on seven\n\nBuilt from d66afc939b1991186ba00180348db400411ca117.",
+          "sha256": "625b33093fbd7d12ebd178de2bda5470e31ce95bbc498357b4affc16a2c4c7a3",
+          "version": "0.1.0.135",
+          "buildVersion": "135",
+          "date": "2026-10-15T00:32:44Z",
+          "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/ryuzu-135-d66afc9/Ryuzu-135-sideload.ipa",
+          "size": 14751290,
+          "minOSVersion": "15.0"
+        },
+        {
           "localizedDescription": "# Ryuzu build 134\n\nSwitch emulation for iPhone and iPad. Built from main at `44f1d6a`.\n\nInstall the sideload IPA, or add this source in SideStore or AltStore and it updates itself:\n`https://muffinemu.github.io/Ryuzu/source.json`\n\n**Changes since ryuzu-133-b9e1395**\n- Fix the MK8D crash: skip copies between decoded BCn and other images, end command buffers under a GPU-fatal guard, make the terminate report survive a Vulkan exception\n\nBuilt from 44f1d6aab3e6152af0899566fa4d344a857daec9.",
           "sha256": "de54acaf9ddd5725bb40f4c49a665797a0ae8b30c63e9e9c73dc87d8fa5164bb",
           "version": "0.1.0.134",
@@ -160,10 +179,10 @@
           "minOSVersion": "15.0"
         }
       ],
-      "version": "0.1.0.134",
-      "versionDate": "2026-10-14T23:42:22Z",
-      "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/ryuzu-134-44f1d6a/Ryuzu-134-sideload.ipa",
-      "size": 14751939,
+      "version": "0.1.0.135",
+      "versionDate": "2026-10-15T00:32:44Z",
+      "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/ryuzu-135-d66afc9/Ryuzu-135-sideload.ipa",
+      "size": 14751290,
       "minOSVersion": "15.0"
     }
   ],
