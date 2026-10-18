@@ -7,6 +7,15 @@
   "website": "https://muffinemu.github.io/Ryuzu-Source",
   "news": [
     {
+      "title": "Build 144",
+      "identifier": "build-144",
+      "caption": "# Ryuzu build 144",
+      "date": "2026-10-18T19:48:49Z",
+      "tintColor": "#E0703F",
+      "appID": "com.muffinemu.ryuzu",
+      "notify": false
+    },
+    {
       "title": "Build 135",
       "identifier": "build-135",
       "caption": "# Ryuzu build 135",
@@ -94,10 +103,21 @@
         "privacy": {
           "NSBluetoothAlwaysUsageDescription": "Ryuzu can use Bluetooth game controllers.",
           "NSMicrophoneUsageDescription": "Some games use the microphone. It is only used while a game that asks for it is running.",
-          "NSMotionUsageDescription": "Ryuzu uses motion data for games that read the console gyroscope."
+          "NSMotionUsageDescription": "Ryuzu uses motion data for games that read the console gyroscope.",
+          "NSPhotoLibraryAddUsageDescription": "Screenshots you take in a game can be saved to your photo library."
         }
       },
       "versions": [
+        {
+          "localizedDescription": "# Ryuzu build 144\n\nSwitch emulation for iPhone and iPad. Built from main at `8a2727d`.\n\nInstall the sideload IPA, or add this source in SideStore or AltStore and it updates itself:\n`https://muffinemu.github.io/Ryuzu-Source/source.json`\n\n**Changes since ryuzu-135-d66afc9**\n- Vulkan: accept MoltenVK devices missing mandatory features, resume lost device\n- Vulkan: iOS memory budget, async shaders by default, no geometry stage without the feature\n- Smoke test: don't press Plus mid-check, it quits the guest\n- App icon candidates: Acorn EMU and Squirrel EMU\n- Add copyright headers to the files that lacked one\n- Smoke test: pass -RyuzuAutoBoot, the argument the app reads since the rename\n- Add a Data Manager to Settings\n- Add a screenshot gallery and an option to also save screenshots to Photos\n- Add speed-limit presets and quick video options to the pause menu\n- Add TAS script playback and recording\n\nBuilt from 8a2727d6da17b164ee02631e7c7964024934555a.",
+          "sha256": "5cc6193e92cf623e09745628833d0685f9f0ff16eae47bf8b8c40e0922d0c289",
+          "version": "0.1.0.144",
+          "buildVersion": "144",
+          "date": "2026-10-18T19:48:49Z",
+          "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/ryuzu-144-8a2727d/Ryuzu-144-sideload.ipa",
+          "size": 15028545,
+          "minOSVersion": "15.0"
+        },
         {
           "localizedDescription": "# Ryuzu build 135\n\nSwitch emulation for iPhone and iPad. Built from main at `d66afc9`.\n\nInstall the sideload IPA, or add this source in SideStore or AltStore and it updates itself:\n`https://muffinemu.github.io/Ryuzu/source.json`\n\n**Changes since ryuzu-134-44f1d6a**\n- Two pipeline builder threads on iOS: Mario Kart 8 ran out of memory building 160 pipelines on seven\n\nBuilt from d66afc939b1991186ba00180348db400411ca117.",
           "sha256": "625b33093fbd7d12ebd178de2bda5470e31ce95bbc498357b4affc16a2c4c7a3",
@@ -179,10 +199,10 @@
           "minOSVersion": "15.0"
         }
       ],
-      "version": "0.1.0.135",
-      "versionDate": "2026-10-15T00:32:44Z",
-      "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/ryuzu-135-d66afc9/Ryuzu-135-sideload.ipa",
-      "size": 14751290,
+      "version": "0.1.0.144",
+      "versionDate": "2026-10-18T19:48:49Z",
+      "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/ryuzu-144-8a2727d/Ryuzu-144-sideload.ipa",
+      "size": 15028545,
       "minOSVersion": "15.0"
     }
   ],
