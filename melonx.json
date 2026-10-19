@@ -1,0 +1,47 @@
+{
+  "name": "MeloNX Metal",
+  "identifier": "com.muffinemu.melonx-metal-source",
+  "subtitle": "Test builds",
+  "description": "MeloNX with a Metal renderer for A12Z iPads.",
+  "sourceURL": "https://muffinemu.github.io/Ryuzu-Source/melonx.json",
+  "website": "https://muffinemu.github.io/Ryuzu-Source",
+  "iconURL": "https://raw.githubusercontent.com/MuffinEMU/Ryuzu-Source/main/icon.png",
+  "tintColor": "#2A6DF4",
+  "news": [],
+  "apps": [
+    {
+      "bundleIdentifier": "com.stossy11.MeloNX",
+      "name": "MeloNX Metal",
+      "developerName": "Void",
+      "subtitle": "Switch emulator with a Metal renderer",
+      "localizedDescription": "MeloNX with MoltenVK replaced by a Metal renderer that runs on A12Z iPads. Test build; you need your own keys, firmware and games, and a JIT enabler.",
+      "iconURL": "https://raw.githubusercontent.com/MuffinEMU/Ryuzu-Source/main/icon.png",
+      "tintColor": "#2A6DF4",
+      "category": "games",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "versions": [
+        {
+          "version": "2.7",
+          "buildVersion": "9",
+          "date": "2026-10-19T07:00:00Z",
+          "localizedDescription": "Build 9, bb78d02",
+          "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/melonx-metal-9-bb78d02/MeloNX-Metal-9-sideload.ipa",
+          "sha256": "6b1e8bd8375ccda9cb028317647536cb914f6cd5a643f82b171dcc62560f3e2e",
+          "size": 47064159,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "version": "2.7",
+      "versionDate": "2026-10-19T07:00:00Z",
+      "downloadURL": "https://github.com/MuffinEMU/Ryuzu-Source/releases/download/melonx-metal-9-bb78d02/MeloNX-Metal-9-sideload.ipa",
+      "size": 47064159,
+      "minOSVersion": "15.0"
+    }
+  ],
+  "featuredApps": [
+    "com.stossy11.MeloNX"
+  ]
+}
